@@ -39,6 +39,7 @@ public class MyService extends Service {
                 .setContentTitle("this is the ContentTitle!")//设置下拉列表里的标题
                 .setContentText("this is ContentText!");//设置上下文内容
         Notification notification = builder.getNotification();
+        //以前台服务的模式启动了，并且在系统状态栏会显⽰⼀个通知图标，下拉状态栏后可以看到该通知的详细内容
         startForeground(1, notification);
     }
 
